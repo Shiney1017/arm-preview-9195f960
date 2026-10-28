@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><script>document.documentElement.classList.add("js")</script><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pavement Markings &amp; Parking Lot Maintenance in Hampton Roads | American Road Markings</title>
 <meta name="description" content="American Road Markings, LLC in Norfolk, VA: thermoplastic and traffic paint markings, markers, sealcoating, stamped asphalt, signs, wheel stops and eradication. Serving Hampton Roads since 2003.">
-<meta name="robots" content="noindex"><link rel="icon" href="assets/american-road-markings-favicon.png">
+<meta name="robots" content="noindex"><link rel="preload" as="image" href="assets/paver-540.webp" imagesrcset="assets/paver-540.webp 540w, assets/paver.webp 1000w" imagesizes="(min-width:900px) 36vw, 270px"><link rel="icon" href="assets/american-road-markings-favicon.png">
 <meta property="og:title" content="American Road Markings | Pavement Markings Since 2003"><meta property="og:image" content="assets/home-intro.webp"><meta property="og:type" content="website">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"American Road Markings, LLC","url":"https://americanroadmarkings.com/","logo":"https://americanroadmarkings.com/wp-content/uploads/americanroadmarkings-logo.png","image":"https://americanroadmarkings.com/wp-content/uploads/home-intro.webp","telephone":"+1-757-857-0734","foundingDate":"2003","address":{"@type":"PostalAddress","streetAddress":"731 Rugby Street","addressLocality":"Norfolk","addressRegion":"VA","postalCode":"23504","addressCountry":"US"},"areaServed":"Hampton Roads, VA"}</script>
 <style>
@@ -39,26 +39,28 @@ footer{background:var(--k);color:#ccc;padding:30px 0;font-size:.9rem}.demo{posit
 .hero .lines path{stroke:var(--y);stroke-width:8;fill:none;stroke-dasharray:60 40;stroke-dashoffset:0;animation:roll 2.4s linear infinite}
 .hero .lines path.w{stroke:#fff;stroke-dasharray:2000;stroke-dashoffset:2000;animation:draw 2.2s .3s ease-out forwards}
 @keyframes roll{to{stroke-dashoffset:-100}}@keyframes draw{to{stroke-dashoffset:0}}
-.hero h1,.hero p,.hero .ctas,.hero .eyebrow{opacity:0;transform:translateY(24px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .ctas,.hero .eyebrow{opacity:0;transform:translate3d(0,18px,0);animation:up .7s cubic-bezier(.16,1,.3,1) forwards}.hero h1,.hero p{opacity:.02;transform:translate3d(0,18px,0);animation:up .7s cubic-bezier(.16,1,.3,1) forwards}
 .hero h1{animation-delay:.15s}.hero p{animation-delay:.35s}.hero .ctas{animation-delay:.5s}@keyframes up{to{opacity:1;transform:none}}
 
 #prog{position:fixed;left:0;top:0;height:5px;width:100%;background:repeating-linear-gradient(90deg,var(--y) 0 30px,transparent 30px 45px);transform-origin:0;transform:scaleX(0);z-index:70}
 header{transition:box-shadow .3s,height .3s}header.sc{box-shadow:0 6px 20px rgba(0,0,0,.15)}
-.rv{opacity:0;transform:translateY(40px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
-.card{transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.18)}
-.card img,.card video,.gal img{transition:transform .6s}.card:hover img,.card:hover video,.gal img:hover{transform:scale(1.06)}.card,.gal>*{overflow:hidden}
+.js .rv{opacity:0;transform:translate3d(0,28px,0);transition:opacity .6s ease-out,transform .6s cubic-bezier(.16,1,.3,1)}.js .rv.in{opacity:1;transform:none}
+.card{transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(0,0,0,.16)}
+.card img,.card video,.gal img{transition:transform .6s}.card:hover img,.card:hover video,.gal img:hover{transform:scale(1.035)}.card,.gal>*{overflow:hidden}
 .btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--k)}
 .steps li:before{transition:transform .5s}.steps li.in:before{transform:rotate(360deg)}
 
-.paver{position:absolute;z-index:1;bottom:18px;right:50%;width:270px;margin-right:-135px;animation:rollin 2.6s .6s cubic-bezier(.15,.7,.25,1) both}
-.paver img{width:100%;height:auto;filter:drop-shadow(0 18px 14px rgba(0,0,0,.55))}
-.bob{position:relative;animation:bob .35s 3.2s ease-in-out infinite alternate}
-.bc{position:absolute;width:18px;height:18px;margin:-9px;border-radius:50%;background:radial-gradient(#ffcf6b,rgba(255,140,0,.6) 40%,transparent 70%);animation:beacon .9s ease-in-out infinite;mix-blend-mode:screen}
-.trail{position:absolute;right:62%;bottom:4%;height:16%;width:120vw;background:linear-gradient(#2a2a2a,#151515);border-top:4px solid var(--y);transform-origin:right;transform:scaleX(0);animation:lay 2.6s .6s cubic-bezier(.15,.7,.25,1) forwards;opacity:.85}
-@keyframes rollin{from{transform:translateX(-120vw)}}@keyframes lay{to{transform:scaleX(1)}}
-@keyframes bob{to{transform:translateY(-2px)}}@keyframes beacon{50%{transform:scale(2.6);opacity:.35}}
-@media(min-width:900px){.hero .wrap{padding:96px 20px 150px}.paver{right:3%;margin:0;width:min(44vw,580px);bottom:24px}.hero h1,.hero p{max-width:min(56ch,48vw)}}
-@media(prefers-reduced-motion:reduce){.hero *,.lines path{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}.rv{opacity:1;transform:none;transition:none}.paver{animation:none!important;transform:none!important}.paver *{animation:none!important}.trail{transform:scaleX(1)!important}}
+.paver{position:absolute;z-index:1;bottom:18px;right:50%;width:270px;margin-right:-135px;transform:translate3d(-120vw,0,0);will-change:transform}
+.hero.go .paver{animation:rollin 2.4s .3s cubic-bezier(.16,1,.3,1) forwards}
+.paver img{position:relative;width:100%;height:auto;display:block}
+.shadow{position:absolute;left:4%;right:2%;bottom:1%;height:12%;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent);filter:blur(4px)}
+.bob{position:relative}.hero.go .bob{animation:bob .18s linear 9 alternate .3s}
+.bc{position:absolute;width:14px;height:14px;margin:-7px;border-radius:50%;background:radial-gradient(#ffd27a,rgba(255,150,0,.45) 45%,transparent 70%);opacity:.8;animation:beacon 1.4s ease-in-out infinite;mix-blend-mode:screen}
+.trail{position:absolute;right:58%;bottom:4%;height:15%;width:130vw;background:linear-gradient(#2b2b2b,#141414);border-top:3px solid var(--y);box-shadow:inset 0 6px 10px rgba(255,255,255,.05);opacity:.9}
+@keyframes rollin{0%{transform:translate3d(-120vw,0,0)}88%{transform:translate3d(4px,0,0)}94%{transform:translate3d(-1px,0,0)}100%{transform:translate3d(0,0,0)}}
+@keyframes bob{to{transform:translate3d(0,-1.5px,0)}}@keyframes beacon{50%{transform:scale(1.7);opacity:.45}}
+@media(min-width:900px){.hero .wrap{padding:96px 20px 150px}.paver{right:2%;margin:0;width:min(36vw,520px);bottom:20px}.hero h1,.hero p{max-width:min(56ch,46vw)}}
+@media(prefers-reduced-motion:reduce){.hero *,.lines path{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}.rv{opacity:1;transform:none;transition:none}.paver{animation:none!important;transform:none!important;will-change:auto}.paver *{animation:none!important}.trail{transform:scaleX(1)!important}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <div id="prog" aria-hidden="true"></div><header><div class="wrap"><a href="#top"><img src="assets/americanroadmarkings-logo.png" alt="American Road Markings" width="361" height="201"></a>
@@ -69,17 +71,17 @@ header{transition:box-shadow .3s,height .3s}header.sc{box-shadow:0 6px 20px rgba
 <h1>Pavement markings built to spec, from runways to parking lots.</h1>
 <p>Thermoplastic, traffic paint, markers, sealcoating, stamped asphalt and signs made in our on-site sign shop. Approved and licensed for government work from federal to municipal and all military facilities.</p>
 <div class="ctas"><a class="btn" href="#quote">Request a Quote</a><a class="btn o" href="tel:+17578570734">Call (757) 857-0734</a></div> </div><svg class="lines" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100H1440"/><path class="w" d="M0 70H1440"/></svg>
-<div class="paver" aria-hidden="true"><div class="trail"></div><div class="bob"><picture><source srcset="assets/paver.webp" type="image/webp"><img src="assets/paver.png" alt="" width="900" height="691" fetchpriority="high"></picture><i class="bc" style="left:37.4%;top:12.1%"></i><i class="bc" style="left:57.3%;top:8.5%;animation-delay:.45s"></i></div></div></section>
+<div class="paver" aria-hidden="true"><div class="trail"></div><div class="bob"><div class="shadow"></div><picture><source srcset="assets/paver-540.webp 540w, assets/paver.webp 1000w" sizes="(min-width:900px) 36vw, 270px" type="image/webp"><img id="pv" src="assets/paver.png" alt="" width="1000" height="765" decoding="async" fetchpriority="high"></picture><i class="bc" style="left:37.4%;top:12.1%"></i><i class="bc" style="left:57.3%;top:8.5%;animation-delay:.45s"></i></div></div></section>
 <div class="stripe" aria-hidden="true"></div>
 <div class="facts"><div class="wrap"><ul><li><b>Since <span data-count="2003">2003</span></b>Serving Hampton Roads</li><li><b><span data-count="30">30</span>+ years</b>Each senior crew leader</li><li><b>Background-checked</b>Every team member</li><li><b>GAF Certified</b>Street Print &amp; Traffic Pattern XD installer</li></ul></div></div>
 <section id="services" class="alt"><div class="wrap"><div class="eyebrow" style="color:var(--r)">What we do</div><h2 class="rv">Complete pavement marking &amp; lot maintenance</h2>
 <div class="grid">
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/pavement.jpg" width="960" height="710" aria-label="Fresh pavement markings (3D animation)" data-src="pavement"></video><div><h3>Pavement Markings</h3><p>Thermoplastic and inlaid markings, traffic paint, epoxy, and permanent or temporary traffic tape. Short- and long-line striping, including ADA-compliant layouts.</p></div></article>
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/markers.jpg" width="960" height="710" aria-label="Road markers and delineators (3D animation)" data-src="markers"></video><div><h3>Markers &amp; Delineators</h3><p>Installed by our crews to keep roadways and lots clearly guided.</p></div></article>
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/sealcoat.jpg" width="960" height="710" aria-label="Sealcoated parking lot (3D animation)" data-src="sealcoat"></video><div><h3>Sealcoating &amp; Crack Repair</h3><p>Parking lot maintenance that keeps surfaces safe, functional and looking their best.</p></div></article>
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/stamped.jpg" width="960" height="710" aria-label="Decorative stamped asphalt crosswalk (3D animation)" data-src="stamped"></video><div><h3>Stamped Asphalt</h3><p>One of the few GAF Certified Street Print and Traffic Pattern XD installers, including decorative and textured asphalt.</p></div></article>
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/signs.jpg" width="960" height="710" aria-label="Parking signs and wheel stops (3D animation)" data-src="signs"></video><div><h3>Signs &amp; Wheel Stops</h3><p>Regulatory and custom signs made in our sign shop, with your logo if you like. Concrete wheel stops always in stock.</p></div></article>
-<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/eradication.jpg" width="960" height="710" aria-label="Line eradication work (3D animation)" data-src="eradication"></video><div><h3>Eradication</h3><p>Removal of existing markings ahead of re-striping and layout changes.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/pavement.jpg" width="960" height="710" aria-label="Fresh pavement markings (3D animation)" data-src="pavement"></video><div><h3>Pavement Markings</h3><p>Thermoplastic and inlaid markings, traffic paint, epoxy, and permanent or temporary traffic tape. Short- and long-line striping, including ADA-compliant layouts.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/markers.jpg" width="960" height="710" aria-label="Road markers and delineators (3D animation)" data-src="markers"></video><div><h3>Markers &amp; Delineators</h3><p>Installed by our crews to keep roadways and lots clearly guided.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/sealcoat.jpg" width="960" height="710" aria-label="Sealcoated parking lot (3D animation)" data-src="sealcoat"></video><div><h3>Sealcoating &amp; Crack Repair</h3><p>Parking lot maintenance that keeps surfaces safe, functional and looking their best.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/stamped.jpg" width="960" height="710" aria-label="Decorative stamped asphalt crosswalk (3D animation)" data-src="stamped"></video><div><h3>Stamped Asphalt</h3><p>One of the few GAF Certified Street Print and Traffic Pattern XD installers, including decorative and textured asphalt.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/signs.jpg" width="960" height="710" aria-label="Parking signs and wheel stops (3D animation)" data-src="signs"></video><div><h3>Signs &amp; Wheel Stops</h3><p>Regulatory and custom signs made in our sign shop, with your logo if you like. Concrete wheel stops always in stock.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" data-poster="assets/svc/eradication.jpg" width="960" height="710" aria-label="Line eradication work (3D animation)" data-src="eradication"></video><div><h3>Eradication</h3><p>Removal of existing markings ahead of re-striping and layout changes.</p></div></article>
 </div></div></section>
 <section id="process"><div class="wrap two"><div><div class="eyebrow" style="color:var(--r)">How it works</div><h2 class="rv">From quote to fresh lines</h2><p>Proven on high-profile work, including a half-million-dollar dual runway contract at NAS Oceana, Norfolk and Virginia Beach citywide road maintenance, and Route 13 on the Eastern Shore.</p></div>
 <ol class="steps rv"><li><strong>Request a quote.</strong> Call or send your project details.</li><li><strong>We plan to spec.</strong> Layout, materials and signage matched to your project requirements.</li><li><strong>Our crews install.</strong> Led by senior crew leaders with 30+ years each in the industry.</li></ol></div></section>
@@ -99,11 +101,13 @@ header{transition:box-shadow .3s,height .3s}header.sc{box-shadow:0 6px 20px rgba
 <div class="demo">Demo concept</div>
 <script>
 (()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches,h=document.querySelector('header'),p=document.getElementById('prog'),hero=document.querySelector('.hero');
-addEventListener('scroll',()=>{const y=scrollY,m=document.documentElement.scrollHeight-innerHeight;p.style.transform='scaleX('+(y/m)+')';h.classList.toggle('sc',y>10);if(!rm)hero.style.backgroundPositionY='calc(50% + '+y*.35+'px)'},{passive:true});
+addEventListener('scroll',()=>{const y=scrollY,m=document.documentElement.scrollHeight-innerHeight;p.style.transform='scaleX('+(y/m)+')';h.classList.toggle('sc',y>10);if(!rm&&y<innerHeight)hero.style.backgroundPositionY='calc(50% + '+y*.35+'px)'},{passive:true});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');t.querySelectorAll&&t.querySelectorAll('li').forEach((l,i)=>setTimeout(()=>l.classList.add('in'),i*200));io.unobserve(t)}),{threshold:.15});
-document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+document.querySelectorAll('.rv').forEach(el=>{const sib=[...el.parentElement.children].filter(c=>c.classList.contains('rv'));el.style.transitionDelay=Math.min(sib.indexOf(el),5)*80+'ms';io.observe(el)});const pv=document.getElementById('pv'),go=()=>hero.classList.add('go');(pv.decode?pv.decode():Promise.resolve()).then(go,go);setTimeout(go,2500);
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting||rm)return;const el=e.target,n=+el.dataset.count,s0=n>1000?1990:0,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(s0+(n-s0)*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0);co.unobserve(el)}),{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(e=>co.observe(e));})();
-</script><script>(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm)return;
-const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.dataset.ld){const n=v.dataset.src;v.innerHTML='<source src="assets/svc/'+n+'.webm" type="video/webm"><source src="assets/svc/'+n+'.mp4" type="video/mp4">';v.dataset.ld=1;v.load()}v.play().catch(()=>{})}else v.pause()}),{rootMargin:'200px 0px'});
-document.querySelectorAll('video.sv').forEach(v=>io.observe(v))})();</script></body></html>
+</script><script>(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches,vs=document.querySelectorAll('video.sv');
+const po=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.poster=e.target.dataset.poster;po.unobserve(e.target)}}),{rootMargin:'600px 0px'});vs.forEach(v=>po.observe(v));
+if(rm)return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.dataset.ld){const n=v.dataset.src;v.innerHTML='<source src="assets/svc/'+n+'.webm" type="video/webm"><source src="assets/svc/'+n+'.mp4" type="video/mp4">';v.dataset.ld=1;v.load()}v.play().catch(()=>{})}else v.pause()}),{threshold:.25});
+const start=()=>vs.forEach(v=>io.observe(v));document.readyState==='complete'?start():addEventListener('load',start)})();</script></body></html>
