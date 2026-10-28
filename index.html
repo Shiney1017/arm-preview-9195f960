@@ -23,7 +23,7 @@ h1{font-size:clamp(2.1rem,6vw,3.8rem);line-height:1.05;margin:.3em 0;max-width:1
 .facts{background:var(--k);color:var(--w)}.facts ul{list-style:none;margin:0;padding:22px 0;display:grid;gap:14px;grid-template-columns:1fr 1fr}
 .facts b{display:block;color:var(--y);font-size:1.3rem}section{padding:64px 0}.alt{background:var(--g)}
 .grid{display:grid;gap:20px;grid-template-columns:1fr}.card{background:var(--w);border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);border-top:5px solid var(--y)}
-.card img{aspect-ratio:4/3;object-fit:cover;width:100%}.card div{padding:16px 18px}.card h3{margin:0 0 6px}
+.card img,.card video{aspect-ratio:4/3;object-fit:cover;width:100%;display:block;background:#222}.card div{padding:16px 18px}.card h3{margin:0 0 6px}
 .steps{counter-reset:s;list-style:none;padding:0}.steps li{counter-increment:s;padding:16px 0 16px 64px;position:relative;border-bottom:1px solid #ddd}
 .steps li:before{content:counter(s);position:absolute;left:0;top:14px;width:46px;height:46px;border-radius:50%;background:var(--y);font-weight:900;font-size:1.3rem;display:grid;place-items:center}
 .gal{display:grid;gap:8px;grid-template-columns:1fr 1fr}.gal img{aspect-ratio:1;object-fit:cover;border-radius:6px}
@@ -46,7 +46,7 @@ footer{background:var(--k);color:#ccc;padding:30px 0;font-size:.9rem}.demo{posit
 header{transition:box-shadow .3s,height .3s}header.sc{box-shadow:0 6px 20px rgba(0,0,0,.15)}
 .rv{opacity:0;transform:translateY(40px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
 .card{transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.18)}
-.card img,.gal img{transition:transform .6s}.card:hover img,.gal img:hover{transform:scale(1.06)}.card,.gal>*{overflow:hidden}
+.card img,.card video,.gal img{transition:transform .6s}.card:hover img,.card:hover video,.gal img:hover{transform:scale(1.06)}.card,.gal>*{overflow:hidden}
 .btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--k)}
 .steps li:before{transition:transform .5s}.steps li.in:before{transform:rotate(360deg)}
 
@@ -74,12 +74,12 @@ header{transition:box-shadow .3s,height .3s}header.sc{box-shadow:0 6px 20px rgba
 <div class="facts"><div class="wrap"><ul><li><b>Since <span data-count="2003">2003</span></b>Serving Hampton Roads</li><li><b><span data-count="30">30</span>+ years</b>Each senior crew leader</li><li><b>Background-checked</b>Every team member</li><li><b>GAF Certified</b>Street Print &amp; Traffic Pattern XD installer</li></ul></div></div>
 <section id="services" class="alt"><div class="wrap"><div class="eyebrow" style="color:var(--r)">What we do</div><h2 class="rv">Complete pavement marking &amp; lot maintenance</h2>
 <div class="grid">
-<article class="card rv"><img src="assets/Pavement-Markings-6.webp" alt="Fresh pavement markings" loading="lazy" width="768" height="576"><div><h3>Pavement Markings</h3><p>Thermoplastic and inlaid markings, traffic paint, epoxy, and permanent or temporary traffic tape. Short- and long-line striping, including ADA-compliant layouts.</p></div></article>
-<article class="card rv"><img src="assets/Markers-Delineators-5.webp" alt="Road markers and delineators" loading="lazy" width="768" height="576"><div><h3>Markers &amp; Delineators</h3><p>Installed by our crews to keep roadways and lots clearly guided.</p></div></article>
-<article class="card rv"><img src="assets/Sealcoating-Crack-Repair-5.webp" alt="Sealcoated parking lot" loading="lazy" width="768" height="576"><div><h3>Sealcoating &amp; Crack Repair</h3><p>Parking lot maintenance that keeps surfaces safe, functional and looking their best.</p></div></article>
-<article class="card rv"><img src="assets/Stamped-Asphalt-1.webp" alt="Decorative stamped asphalt crosswalk" loading="lazy" width="768" height="576"><div><h3>Stamped Asphalt</h3><p>One of the few GAF Certified Street Print and Traffic Pattern XD installers, including decorative and textured asphalt.</p></div></article>
-<article class="card rv"><img src="assets/Signs-Wheel-Stops-5.webp" alt="Parking signs and wheel stops" loading="lazy" width="768" height="576"><div><h3>Signs &amp; Wheel Stops</h3><p>Regulatory and custom signs made in our sign shop, with your logo if you like. Concrete wheel stops always in stock.</p></div></article>
-<article class="card rv"><img src="assets/Eradication-1.webp" alt="Line eradication work" loading="lazy" width="768" height="576"><div><h3>Eradication</h3><p>Removal of existing markings ahead of re-striping and layout changes.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/pavement.jpg" width="960" height="710" aria-label="Fresh pavement markings (3D animation)" data-src="pavement"></video><div><h3>Pavement Markings</h3><p>Thermoplastic and inlaid markings, traffic paint, epoxy, and permanent or temporary traffic tape. Short- and long-line striping, including ADA-compliant layouts.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/markers.jpg" width="960" height="710" aria-label="Road markers and delineators (3D animation)" data-src="markers"></video><div><h3>Markers &amp; Delineators</h3><p>Installed by our crews to keep roadways and lots clearly guided.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/sealcoat.jpg" width="960" height="710" aria-label="Sealcoated parking lot (3D animation)" data-src="sealcoat"></video><div><h3>Sealcoating &amp; Crack Repair</h3><p>Parking lot maintenance that keeps surfaces safe, functional and looking their best.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/stamped.jpg" width="960" height="710" aria-label="Decorative stamped asphalt crosswalk (3D animation)" data-src="stamped"></video><div><h3>Stamped Asphalt</h3><p>One of the few GAF Certified Street Print and Traffic Pattern XD installers, including decorative and textured asphalt.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/signs.jpg" width="960" height="710" aria-label="Parking signs and wheel stops (3D animation)" data-src="signs"></video><div><h3>Signs &amp; Wheel Stops</h3><p>Regulatory and custom signs made in our sign shop, with your logo if you like. Concrete wheel stops always in stock.</p></div></article>
+<article class="card rv"><video class="sv" muted playsinline loop preload="none" poster="assets/svc/eradication.jpg" width="960" height="710" aria-label="Line eradication work (3D animation)" data-src="eradication"></video><div><h3>Eradication</h3><p>Removal of existing markings ahead of re-striping and layout changes.</p></div></article>
 </div></div></section>
 <section id="process"><div class="wrap two"><div><div class="eyebrow" style="color:var(--r)">How it works</div><h2 class="rv">From quote to fresh lines</h2><p>Proven on high-profile work, including a half-million-dollar dual runway contract at NAS Oceana, Norfolk and Virginia Beach citywide road maintenance, and Route 13 on the Eastern Shore.</p></div>
 <ol class="steps rv"><li><strong>Request a quote.</strong> Call or send your project details.</li><li><strong>We plan to spec.</strong> Layout, materials and signage matched to your project requirements.</li><li><strong>Our crews install.</strong> Led by senior crew leaders with 30+ years each in the industry.</li></ol></div></section>
@@ -104,4 +104,6 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting||rm)return;const el=e.target,n=+el.dataset.count,s0=n>1000?1990:0,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(s0+(n-s0)*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0);co.unobserve(el)}),{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(e=>co.observe(e));})();
-</script></body></html>
+</script><script>(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm)return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.dataset.ld){const n=v.dataset.src;v.innerHTML='<source src="assets/svc/'+n+'.webm" type="video/webm"><source src="assets/svc/'+n+'.mp4" type="video/mp4">';v.dataset.ld=1;v.load()}v.play().catch(()=>{})}else v.pause()}),{rootMargin:'200px 0px'});
+document.querySelectorAll('video.sv').forEach(v=>io.observe(v))})();</script></body></html>
